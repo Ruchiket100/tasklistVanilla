@@ -8,12 +8,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>TASKLIST</title>
 </head>
 
 <body>
-
+    <!-- tag model -->
+    <section class="section-tags">
+        <div class="tags-model">
+            <button class="close">close</button>
+            <div><input class="tag" type="checkbox" name="Work">
+                <h3>Work</h3>
+            </div>
+            <div><input class="tag" type="checkbox" name="Code">
+                <h3>Code</h3>
+            </div>
+            <div><input class="tag" type="checkbox" name="Other">
+                <h3>Other</h3>
+            </div>
+            <div><input type="text" class="tag-input"><button>Add new tag</button></div>
+        </div>
+    </section>
     <!-- Header -->
     <section class="section-header">
         <h1>TASKLIST</h1>
@@ -23,12 +39,8 @@
     <!-- Input Section -->
     <section class="section-input">
         <input type="text" class="task-input">
-        <select name="Add Tag" id="tag-select">
-            <option value="code">Code</option>
-            <option value="school">School</option>
-            <option value="new">Create New</option>
-        </select>
-        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+        <button class="tag-btn">Add Tag</button>
+        <button class="add-btn">Add Task</button>
     </section>
     <!-- tasks section -->
     <section class="section-tasks">
