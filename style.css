@@ -1,3 +1,9 @@
+/* colors - 
+    primary - #672EE2;
+    secondary - #DCC7FF;
+    shades - #1E1E1E #8C8EA4 #C7C9D7 #F6F6F6 #FFFF
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +12,151 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    background-color: #F6F6F6;
 }
 
 html {
     font-size: 62.5%;
-}
-/* header Section */
 
+}
+
+/* header Section */
+.section-header {
+    margin-top: 9.2rem;
+    width: 100%;
+}
+
+.header-div {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-div h1 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #1E1E1E;
+}
+
+.header-div p {
+    line-height: 1.05;
+    margin-top: 0.8rem;
+    color: #8C8EA4;
+}
+
+.header-div a {
+    /* background-color: transparent; */
+    border: none;
+    cursor: pointer;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Section input */
+.section-input {
+    margin-left: 10%;
+    margin-bottom: 3.2rem;
+    padding: 1.2rem;
+    width: 35%;
+    height: 9.6rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFF;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.05);
+}
+
+.section-input input {
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    color: #1E1E1E;
+    font-weight: 200;
+}
+
+.input-btn-div {
+    align-self: flex-end;
+}
+
+.tag-btn,
+.add-btn {
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.tag-btn {
+    color: #C7C9D7;
+    background-color: white;
+    border: 1px solid #C7C9D7;
+}
+
+.tag-btn:hover,
+.tag-btn:active {
+    background: #eaebf2;
+}
+
+.add-btn {
+    background-color: #672EE2;
+    color: white;
+    border: 1px solid #672EE2;
+    margin-left: 0.5rem;
+}
+
+.add-btn:hover,
+.add-btn:active {
+    background-color: #5d1cea;
+}
+
+/* tasks show section */
+.task-div {
+    display: flex;
+    background-color: white;
+    height: 4.8rem;
+    border-bottom: 1px solid #C7C9D7;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    margin-left: 10%;
+}
+
+.task-div h4 {
+    background: #8760db;
+    padding: 0.2rem;
+    border-radius: 2px;
+    color: white;
+    font-weight: 200;
+}
+
+.task-div:first-child {
+    border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.task-div:last-child {
+    border-radius: 0 0 1.2rem 1.2rem;
+}
+
+.task-div .del-btn {
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(238, 58, 58);
+    outline: none;
+    border: none;
+}
+
+.task-div .del-btn:hover{
+    color: rgb(239, 33, 33);
+}
 
 i,
 svg {
